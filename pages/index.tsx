@@ -7,7 +7,7 @@ const Home: NextPage = () => {
   const {landingpage}=siteinfo
   useEffect(()=>{
     document.title=landingpage.title;
-  },[])
+  },[landingpage])
   return (
     <div>
       <h1>Homepage</h1>
