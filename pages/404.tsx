@@ -1,7 +1,6 @@
-import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
-import errorGif from '../public/404.gif'
+import { baseURL,isProd } from "../helpers/preDeployChecks"
 const Error = () => {
     const [isHover,setIsHover]=useState(false)
 
@@ -16,7 +15,7 @@ const Error = () => {
     <div style={{
         maxHeight:'100vh',
         height:'100vh',
-        background:'url(/404.gif)',
+        background: isProd?`url(${baseURL}/404.gif)`:`url(/404.gif)`,
         backgroundSize:'contain',
         backgroundRepeat:"no-repeat",
         backgroundColor:'#ffb800',
