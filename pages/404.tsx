@@ -1,7 +1,10 @@
 import Link from "next/link"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { baseURL,isProd } from "../helpers/preDeployChecks"
 const Error = () => {
+    useEffect(()=>{
+        document.title="Error Page"
+    },[])
     const [isHover,setIsHover]=useState(false)
 
     function Enter(){
