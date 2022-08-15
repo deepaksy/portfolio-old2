@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import { useEffect } from 'react'
+import Navbar from '../components/Navbar'
 import siteinfo from '../data/siteinfo.json'
 import styles from '../styles/Home.module.scss'
 
@@ -10,7 +11,7 @@ const Home: NextPage = () => {
   },[landingpage])
   return (
     <div>
-      <h1>Homepage</h1>
+      <Navbar/>
     </div>
   )
 }

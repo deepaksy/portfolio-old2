@@ -1,0 +1,13 @@
+:root{
+    --backgroundColor:white;
+    --color:#212121;
+  }
+  [theme="dark"]{
+    --backgroundColor:#212121;
+    --color:white
+  }
+  
+  [theme="light"]{
+    --backgroundColor:white;
+    --color:#212121;
+  }

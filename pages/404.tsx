@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { useEffect, useState } from "react"
 import { baseURL,isProd } from "../helpers/preDeployChecks"
+import { motion } from "framer-motion"
 const Error = () => {
     useEffect(()=>{
         document.title="Error Page"
@@ -26,7 +27,9 @@ const Error = () => {
         backgroundPositionY:'center',
         textAlign:'center',
     }}>
-        <Link href="/"><h1 onMouseEnter={Enter} onMouseLeave={Leave} style={{margin:0,position:'absolute',top:'65px',left:0,right:0,cursor:'pointer',color:isHover?'green':'inherit',transform:isHover?'scale(0.8)':'none',transition:'all 0.3s ease-in-out'}}>Navigate Back to Home</h1></Link>
+        <Link href="/"><motion.h1 animate={{
+            rotate:[0,-16,0,16,0]
+        }} transition={{repeat:Infinity,repeatType:'reverse',repeatDelay:1}} onMouseEnter={Enter} onMouseLeave={Leave} style={{margin:0,position:'absolute',top:'65px',left:0,right:0,cursor:'pointer',color:isHover?'aliceblue':'inherit',transform:isHover?'scale(0.8)':'none',transition:'all 0.3s ease-in-out'}}>Navigate Back to Home</motion.h1></Link>
         <div style={{
             margin:'auto',
             position:'absolute',
@@ -38,7 +41,7 @@ const Error = () => {
             borderStyle:'solid',
             borderWidth:'thin 0px 0px'
         }}>
-            <strong style={{padding:'12px'}}>Copyright © | Trademark Reserved. {`${new Date().getFullYear()}-${new Date().getFullYear()+1}`}</strong>
+            <motion.strong   style={{padding:'12px',color:"white"}}>Copyright © | Trademark Reserved. {`${new Date().getFullYear()}-${new Date().getFullYear()+1}`}</motion.strong >
         </div>
     </div>
   )
