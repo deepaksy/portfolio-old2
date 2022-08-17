@@ -10,6 +10,7 @@ import { motion } from 'framer-motion'
 import siteinfo from '../data/siteinfo.json'
 import SocialLinkFav from '../components/SocialLinkFav'
 import { socialLinksData } from '../data/sociallinkData'
+import { baseURL, isProd } from '../helpers/preDeployChecks'
 const data:toastProps={
   title:"Hello user!",
   description:"How are you",
@@ -35,7 +36,7 @@ const Home: NextPage = () => {
             }
           })}
         </motion.span>
-      <Image src='/pirogrammer.jpg' alt='programmer meme' sx={{
+      <Image src={isProd?`${baseURL}/pirogrammer.jpg`:'/pirogrammer.jpg'} alt='programmer meme' sx={{
         maxWidth:['80%','30%'],
         // margin:'auto',
         borderRadius:'2%'
