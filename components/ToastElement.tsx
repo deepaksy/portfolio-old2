@@ -10,10 +10,11 @@ import { useToast,Button } from "@chakra-ui/react"
 import { useEffect } from "react"
 
 const Toast = ({title,description,status,duration,isClosable,trigger}:toastProps) => {
+    const toast=useToast()
     useEffect(()=>{
         trigger(toast)
-    },[])
-    const toast=useToast()
+    },[toast, trigger])
+
     const triggerToast = ()=>{
         toast({
             title:title,

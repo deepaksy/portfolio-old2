@@ -4,7 +4,7 @@ const NextDocument = () => {
   return (
     <Html>
         <Head>
-        <script src="https://kit.fontawesome.com/812181c617.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/812181c617.js" async crossOrigin="anonymous"></script>
         </Head>
         <body>
             <Main/>
