@@ -7,7 +7,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background-color: var(--backgroundColor);
   color:var(--color);
-  transition: background-color 0.2s ease-in;
+  overflow-x: hidden;
 }
 
 a {
@@ -17,6 +17,10 @@ a {
 
 * {
   box-sizing: border-box;
+  transition: background-color 2s ease-in-out;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 @media (prefers-color-scheme: dark) {

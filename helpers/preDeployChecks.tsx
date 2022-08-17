@@ -1,3 +1,3 @@
 export const baseURL="/portfolio"
 
-export const isProd=false;
+export const isProd=true;

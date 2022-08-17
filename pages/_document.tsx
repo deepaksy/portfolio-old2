@@ -3,7 +3,9 @@ import Document, {Html,Head,Main,NextScript} from 'next/document'
 const NextDocument = () => {
   return (
     <Html>
-        <Head/>
+        <Head>
+        <script src="https://kit.fontawesome.com/812181c617.js" crossorigin="anonymous"></script>
+        </Head>
         <body>
             <Main/>
             <NextScript/>

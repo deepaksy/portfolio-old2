@@ -3,8 +3,8 @@ export type NavbarLinksProps={
     link:string
 }
 export const navbarlinks:NavbarLinksProps[]=[
-    {title:"About",link:''},
-    {title:"Projects",link:''},
-    {title:"Feeback",link:''}
+    {title:"About",link:'/about'},
+    {title:"Projects",link:'/projects'},
+    {title:"Feeback",link:'/feedback'}
     
 ]

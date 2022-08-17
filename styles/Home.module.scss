@@ -1,5 +1,7 @@
 .container {
-  padding: 0 2rem;
+  min-height: 100vh;
+  max-width: 80%;
+  margin: auto;
 }
 
 .main {
@@ -112,6 +114,11 @@
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+
+  .container{
+    max-width: 100%;
+    margin: none;
   }
 }
 
