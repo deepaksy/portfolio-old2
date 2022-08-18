@@ -12,8 +12,8 @@ import { useEffect } from "react"
 const Toast = ({title,description,status,duration,isClosable,trigger}:toastProps) => {
     const toast=useToast()
     useEffect(()=>{
-        trigger(toast)
-    },[toast, trigger])
+        triggerToast()
+    },[])
 
     const triggerToast = ()=>{
         toast({

@@ -1,6 +1,6 @@
 import '../styles/globals.scss'
 import type { AppProps } from 'next/app'
-import {ChakraProvider,extendTheme} from '@chakra-ui/react'
+import {ChakraProvider,extendTheme, Toast} from '@chakra-ui/react'
 import { useEffect, useState } from 'react'
 import ChakraDrawer from '../components/chakra/Drawer'
 import Navbar from '../components/Navbar'

@@ -4,7 +4,7 @@ import Link from "next/link"
 const SocialLinkFav = ({link,name,icon}:SocialLinksProps) => {
   return (
         <Link target={'_blank'} href={link}>
-            <Avatar icon={icon} name={icon?"":name}></Avatar>
+            <Avatar size={['md','lg']} icon={icon} name={icon?"":name} bg={'gray.200'}></Avatar>
         </Link>
   )
 }

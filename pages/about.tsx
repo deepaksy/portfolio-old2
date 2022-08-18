@@ -1,8 +1,11 @@
-import React from 'react'
+import { Heading } from '@chakra-ui/react'
+import styles from '../styles/About.module.scss'
 
 const About = () => {
   return (
-    <div>About</div>
+    <div className={styles.container}>
+      <Heading>About</Heading>
+    </div>
   )
 }
 

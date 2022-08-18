@@ -13,7 +13,7 @@ import Tags from './Tags'
 const SkillsCard = ({skillname,tags}:SkillCardProps) => {
   return (
     <Box 
-    maxW={['90%','23rem',]}
+    maxW={['90%','28rem',]}
           w={['98%','full']}
           bg={useColorModeValue('white', 'gray.800')}
           boxShadow={'dark-lg'}

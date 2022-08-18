@@ -1,8 +1,8 @@
-import React from 'react'
+import styles from '../styles/Feedback.module.scss'
 
 const Feedback = () => {
   return (
-    <div>Feedback</div>
+    <div className={styles.container}>Feedback</div>
   )
 }
 

@@ -4,21 +4,13 @@ import { AvatarGroup, Heading, Kbd, Stack } from '@chakra-ui/react'
 import styles from '../styles/Home.module.scss'
 import SkillsCard from '../components/SkillsCard'
 import { skilldata } from '../data/skillData'
-import Toast, { toastProps } from '../components/ToastElement'
-import { Image,Text } from '@chakra-ui/react'
+import { Image } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 import siteinfo from '../data/siteinfo.json'
 import SocialLinkFav from '../components/SocialLinkFav'
 import { socialLinksData } from '../data/sociallinkData'
 import { baseURL, isProd } from '../helpers/preDeployChecks'
-const data:toastProps={
-  title:"Hello user!",
-  description:"How are you",
-  status:"success",
-  duration:9000,
-  isClosable:true
 
-}
 
 const Home: NextPage = () => {
 
@@ -71,7 +63,7 @@ const Home: NextPage = () => {
       </Stack>
       </section>
       {/* Toast for notification */}
-      <Toast {...data} trigger={(toast:any)=>{toast({...data})}}/>
+
     </div>
   )
 }
