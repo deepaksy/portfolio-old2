@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export":"next export"
+    "export":"npm run export"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.8",
